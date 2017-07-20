@@ -1,0 +1,16 @@
+extends /layout/_default-layout
+
+prepend config-block
+  - page_name = ''
+
+//- append stylesheet-block
+
+//- append javascript-block
+
+block content-block
+  .content
+    p ダウンロードしたいファイルのURLを入力してください。ブラウザはgoogle chromeを利用してください。
+    p ２つ以上のファイルをダウンロードする場合は、ブラウザのpopupを許可してください。
+    p URLはフルパスを指定してください。
+    textarea.js-input
+    button.js-get ダウンロード
